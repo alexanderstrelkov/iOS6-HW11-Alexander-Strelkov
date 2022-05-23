@@ -310,28 +310,24 @@ class ViewController: UIViewController {
             nameLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 15),
             nameLabel.centerYAnchor.constraint(equalTo: avatarImageView.centerYAnchor, constant: -30),
             nameLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 15)
-            
         ])
         
         statusLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             statusLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 15),
             statusLabel.centerYAnchor.constraint(equalTo: avatarImageView.centerYAnchor)
-            
         ])
         
         onlineStatus.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             onlineStatus.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 15),
             onlineStatus.centerYAnchor.constraint(equalTo: statusLabel.centerYAnchor, constant: 30)
-            
         ])
         
         phoneImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             phoneImage.leadingAnchor.constraint(equalTo: onlineStatus.trailingAnchor, constant: 3),
             phoneImage.bottomAnchor.constraint(equalTo: onlineStatus.bottomAnchor)
-            
         ])
         
         editButton.translatesAutoresizingMaskIntoConstraints = false
@@ -347,14 +343,12 @@ class ViewController: UIViewController {
             parentStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -15),
             parentStackView.topAnchor.constraint(equalTo: editButton.bottomAnchor, constant: 10),
             parentStackView.heightAnchor.constraint(equalToConstant: 100)
-            
         ])
         
         imagesStackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             imagesStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: Metric.leftOffset),
             imagesStackView.topAnchor.constraint(equalTo: parentStackView.bottomAnchor, constant: 45)
-            
         ])
         
         labelsStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -390,12 +384,6 @@ class ViewController: UIViewController {
         
         return stackView
     }
-    
-    //MARK: -Actions
-    
-    @objc private func buttonAction() {
-        
-    }
 }
 
 //MARK: - Constants
@@ -403,7 +391,7 @@ class ViewController: UIViewController {
 extension ViewController {
     
     enum Metric {
-
+        
         static let parentStackViewSpacing: CGFloat = 10
         static let labelsStackViewSpacing: CGFloat = 10
         static let buttonLabelsStackViewSpacing: CGFloat = 10
@@ -414,10 +402,6 @@ extension ViewController {
         static let leftOffset: CGFloat = 10
         static let rightOffset: CGFloat = -18
         static let bottomOffset: CGFloat = -50
-    }
-    
-    enum Strings {
-        
     }
 }
 
